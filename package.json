@@ -25,7 +25,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-fix": "eslint --fix . --ext .ts --ext .tsx",
     "tsc": "tsc",
-    "pre-document": "tsc --out ./scripts/routes.js ./src/navigation/routes.ts",
+    "pre-document": "tsc --outFile ./scripts/routes.js ./src/navigation/routes.ts",
     "postinstall": "patch-package",
     "validate": "npm-run-all tsc lint _test",
     "_validate": "npm-run-all tsc lint _test"

@@ -4,7 +4,7 @@
 branch="$(git rev-parse --abbrev-ref HEAD)"
 valid_branch_reg="^(bug|feat|hotfix)\/[a-zA-Z0-9_]+$"
 
-if [[ "$branch" = "master" || "$branch" = "staging" ]]; then
+if [[ "$branch" = "main" || "$branch" = "staging" ]]; then
   echo "Cannot directly modify git history of a protected branch!"
   echo "Protected branch $branch may only be modified by merge request"
   exit 1

@@ -1,7 +1,14 @@
-const Theme1 = { };
-const Theme2 = { };
+import { Colors } from '../constants';
+
+
+const DarkColorTheme = {
+  ...Colors,
+};
+const LightColorTheme = {
+  ...Colors,
+};
 
 export const Themes = {
-  Theme1,
-  Theme2,
+  DarkColorTheme,
+  LightColorTheme,
 } as const;
